@@ -12,6 +12,9 @@
 		FC40CC141AA560A2000170F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC40CC131AA560A2000170F5 /* Images.xcassets */; };
 		FC40CC171AA560A2000170F5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC40CC151AA560A2000170F5 /* LaunchScreen.xib */; };
 		FC40CC231AA560A3000170F5 /* YYLunBoScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC40CC221AA560A3000170F5 /* YYLunBoScrollViewTests.m */; };
+		FC40CC2E1AA56114000170F5 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC40CC2D1AA56114000170F5 /* RootViewController.m */; };
+		FC40CC381AA564C9000170F5 /* NSTimer+YYFounction.m in Sources */ = {isa = PBXBuildFile; fileRef = FC40CC371AA564C9000170F5 /* NSTimer+YYFounction.m */; };
+		FC40CC3B1AA56524000170F5 /* YYCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC40CC3A1AA56524000170F5 /* YYCycleScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,12 @@
 		FC40CC1C1AA560A2000170F5 /* YYLunBoScrollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YYLunBoScrollViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC40CC211AA560A3000170F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC40CC221AA560A3000170F5 /* YYLunBoScrollViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYLunBoScrollViewTests.m; sourceTree = "<group>"; };
+		FC40CC2C1AA56114000170F5 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		FC40CC2D1AA56114000170F5 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		FC40CC361AA564C9000170F5 /* NSTimer+YYFounction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+YYFounction.h"; sourceTree = "<group>"; };
+		FC40CC371AA564C9000170F5 /* NSTimer+YYFounction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+YYFounction.m"; sourceTree = "<group>"; };
+		FC40CC391AA56524000170F5 /* YYCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCycleScrollView.h; sourceTree = "<group>"; };
+		FC40CC3A1AA56524000170F5 /* YYCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCycleScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +87,9 @@
 			children = (
 				FC40CC101AA560A2000170F5 /* AppDelegate.h */,
 				FC40CC111AA560A2000170F5 /* AppDelegate.m */,
+				FC40CC2C1AA56114000170F5 /* RootViewController.h */,
+				FC40CC2D1AA56114000170F5 /* RootViewController.m */,
+				FC40CC351AA564B9000170F5 /* YYCycleScrollView */,
 				FC40CC131AA560A2000170F5 /* Images.xcassets */,
 				FC40CC151AA560A2000170F5 /* LaunchScreen.xib */,
 				FC40CC0C1AA560A2000170F5 /* Supporting Files */,
@@ -109,6 +121,17 @@
 				FC40CC211AA560A3000170F5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC40CC351AA564B9000170F5 /* YYCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				FC40CC361AA564C9000170F5 /* NSTimer+YYFounction.h */,
+				FC40CC371AA564C9000170F5 /* NSTimer+YYFounction.m */,
+				FC40CC391AA56524000170F5 /* YYCycleScrollView.h */,
+				FC40CC3A1AA56524000170F5 /* YYCycleScrollView.m */,
+			);
+			path = YYCycleScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +178,7 @@
 		FC40CC011AA560A2000170F5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = YY;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = wangyuanyuan;
 				TargetAttributes = {
@@ -210,8 +234,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC40CC3B1AA56524000170F5 /* YYCycleScrollView.m in Sources */,
+				FC40CC381AA564C9000170F5 /* NSTimer+YYFounction.m in Sources */,
 				FC40CC121AA560A2000170F5 /* AppDelegate.m in Sources */,
 				FC40CC0F1AA560A2000170F5 /* main.m in Sources */,
+				FC40CC2E1AA56114000170F5 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +423,7 @@
 				FC40CC281AA560A3000170F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC40CC291AA560A3000170F5 /* Build configuration list for PBXNativeTarget "YYLunBoScrollViewTests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +432,7 @@
 				FC40CC2B1AA560A3000170F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
